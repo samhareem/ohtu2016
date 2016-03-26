@@ -37,6 +37,12 @@ public class StatisticsTest {
     }
 
     @Test
+    public void returnsNullIfPlayerNotFound() {
+        Player testPlayer = stats.search("Exxon-Valdez");
+        Assert.assertNull(testPlayer);
+    }
+
+    @Test
     public void returnsTeam() {
         List<Player> testTeam = stats.team("EDM");
         for (Player player : testTeam) {
