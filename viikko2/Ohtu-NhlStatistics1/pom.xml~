@@ -39,7 +39,6 @@
     			<configuration>
       			    <configLocation>my_checks.xml</configLocation>
     			</configuration>
-			</plugin>
         </plugins>
     </build>
 </project>

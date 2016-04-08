@@ -16,6 +16,7 @@ scenario "user can login with correct password", {
 
     when 'a valid username and password are entered', {
        app.run()
+
     }
 
     then 'user will be logged in to system', {

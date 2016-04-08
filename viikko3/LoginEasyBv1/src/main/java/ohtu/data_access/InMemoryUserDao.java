@@ -4,6 +4,7 @@ import ohtu.domain.User;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class InMemoryUserDao implements UserDao {
 
     private List<User> users;
@@ -11,7 +12,7 @@ public class InMemoryUserDao implements UserDao {
     public InMemoryUserDao() {
         users = new ArrayList<User>();
         users.add(new User("pekka", "akkep"));
-    }        
+    }
 
     @Override
     public List<User> listAll() {
